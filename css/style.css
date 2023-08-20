@@ -14,6 +14,10 @@
   animation: fadeIn 2s;
 }
 
+.header_color {
+  color: #614BC3;
+}
+
 .aside-one {
   padding: 10px;
 }
@@ -97,7 +101,6 @@
 /* the class for my about me section */
 .about_me {
   border-top: dashed;
-  border-bottom: dashed;
 }
 
 /* these are the classes for my blog section */
