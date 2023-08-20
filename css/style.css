@@ -1,0 +1,122 @@
+/* this puts the whole page in a grid */
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "aside-one main main main aside-two"
+    "aside-one main main main aside-two"
+    "footer footer footer footer footer";
+  }
+  
+/* these are the classes for the entire page */
+.header {
+  grid-area: header;
+  animation: fadeIn 2s;
+}
+
+.aside-one {
+  padding: 10px;
+}
+
+.main {
+  grid-area: main;
+  background-color: #749BC2;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation: fadeIn 3s;
+}
+
+.aside-two {
+ padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: #4682A9;
+  animation: fadeIn 4s;
+}
+
+/* this class gives the navbar a proper spacing */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 20px;
+}
+
+/* this is a class I used in previous versions that I might use again at some point */
+.center {
+  text-align: center;
+  padding: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* this class gives format to the icons at the bottom of the page */
+.icons {
+  text-align: center;
+  padding: 30px;
+}
+
+/* these classes give format to the picture and name I have as a logo  */
+.logo {
+  text-align: center;
+  padding: 30px;
+}
+
+.h2_header {
+  font-family: lucida calligraphy;
+  font-size: 16px
+}
+
+.img_header {
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+}
+
+/* this class formats the headshot I use in my main section */
+.img_purpose {
+  width: 400px;
+  height: 500px;
+  float: right;
+}
+
+/* the class for my purpose section */
+.purpose {
+  text-indent: 2rem;
+  text-align: left;
+}
+
+/* the class for my explanation section */
+.explanation {
+  border-top: dashed;
+  text-indent: 2rem;
+  text-align: left;
+}
+
+/* the class for my about me section */
+.about_me {
+  border-top: dashed;
+  border-bottom: dashed;
+}
+
+/* these are the classes for my blog section */
+.blog {
+  padding: 20px;
+}
+
+.p_blog {
+  padding: 20px;
+  text-indent: 2rem;
+}
+
+/* this is the keyframe for my animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
