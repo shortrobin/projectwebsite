@@ -80,9 +80,11 @@
 
 /* this class formats the headshot I use in my main section */
 .img_purpose {
+  
   width: 400px;
   height: 500px;
   float: right;
+  
 }
 
 /* the class for my purpose section */
@@ -187,4 +189,16 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
+
+.item:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
