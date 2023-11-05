@@ -83,7 +83,7 @@
   
   width: 400px;
   height: 500px;
-  float: right;
+  float: inline-end;
   
 }
 
@@ -102,7 +102,7 @@
 
 /* the class for my about me section */
 .about_me {
-  border-top: dashed;
+ 
 }
 
 /* these are the classes for my blog section */
@@ -246,4 +246,9 @@ input:checked + .slider:before {
 
 .error-msg {
   display: none;
+}
+
+#map {
+  float: right;
+ 
 }
